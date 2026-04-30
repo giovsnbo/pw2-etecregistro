@@ -1,0 +1,109 @@
+/* css externo */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(214, 163, 101);
+    color: #817603;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+.destaque {
+    background-color: rgb(228, 223, 197);
+    color: rgb(166, 144, 119);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 10px solid #817603;
+    font-weight: bold;
+}
+
+.box {
+    width: 530px;
+    background-color: rgb(255, 250, 227);
+    padding: 30px;
+    text-align: center;
+    border: 2px solid #817603;
+    border-radius: 8px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/* será executado quando o usuário passar o mouse em cima  */
+.box:hover {
+    background-color: rgb(80, 11, 11);
+    color: aliceblue;
+    transform: scale(0.9);
+
+}
+
+.btn-download: {
+    background-color: #fff;
+    transition: background-color 1s ease;
+}
+
+.btn-download:hover {
+    background-color: #fff;
+}
+
+
+input {
+    width: 300px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #fff4;
+    border-radius: 5px;
+    background-color: #e8dccc;
+    color: #a8a79d;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #7e0f0f;
+    box-shadow: 0 0 30px rgb(214, 163, 101);
+}
+
+input [type="email"] {
+    background-color: #7e0f0f;
+    color: #817603;
+}
+
+.citacao{
+    width: 620px;
+    position: relative;
+    padding: 30px 40px;
+    background-color: bisque;
+    border-left: 5px solid #7e5b2d;
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.citacao:before {
+    content: ' " ';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 80px;
+    color: #7e0f0f;
+    opacity: 0.3;
+}
+
+.citacao:after {
+    content: ' " ';
+    position: absolute;
+    bottom: -40px;
+    right: 90px;
+    font-size: 80px;
+    color: #7e0f0f;
+    opacity: 0.3;
+}

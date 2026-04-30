@@ -1,0 +1,107 @@
+/* Configuração universal */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+/* estilos gerais do site */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250, 244, 190);
+    color: rgb(58, 19, 17);
+    line-height: 1.6;
+}
+/* cabecalho */
+header {
+    background-color: rgb(56, 21, 21);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px 20 px;
+}
+header h1{
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+/* menu de navegação */
+nav{
+    background-color: rgb(250, 246, 211);
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: rgb(58, 19, 17);
+    text-decoration: none;
+    font-weight: bolder;
+}   
+nav ul li a:hover {
+    text-decoration: underline;
+    color: rgb(56, 21, 21);
+    font-size: large;
+}
+/* Linhas horizontais */
+hr {
+    height: 1px;
+    border: none;
+    background-color: rgb(56, 21, 21);
+    margin: 30px 0;
+}
+/* conteudo principal */
+main {
+    padding: 20px;
+}
+/* seções */
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: rgb(56, 21, 21);
+}
+/* artigos */
+article {
+    background-color: rgb(250, 246, 211);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 5px solid  rgb(84, 39, 39);
+}
+
+article h3 {
+    margin-bottom: 8px;
+    color:  rgb(84, 77, 39);
+}
+
+article p {
+    color:  rgb(117, 39, 39);
+}
+    /* Aside - Conteudo relacionado ou secundário */
+
+aside {
+    background-color: rgb(117, 87, 65);
+    padding: 15px;
+    border-radius: 10px;
+    border : 1 px solid  rgb(84, 39, 39);
+    color: rgb(255, 247, 213);
+}
+
+aside h3 {
+    margin-bottom: 10px;
+    color: rgb(255, 247, 213);
+}
+
+footer{
+    background-color: rgb(250, 246, 211);
+    color: rgb(56, 21, 21);
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9em;
+}
+
+a{
+    color: rgb(255, 172, 124);
+}
+
