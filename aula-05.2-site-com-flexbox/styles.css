@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    background-color: #333;
+    color: antiquewhite;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: antiquewhite;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+nav a:hover {
+    color: #ff9e4f
+}
+
+.hero{
+    background: linear-gradient(rgba(44, 24, 26, 0.7), rgba(44, 24, 16, 0.3)) ,
+     url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&h=600&fit=crop");
+    height: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary{
+    background-color: rgb(233, 134, 76);
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: backgound-color 0.5s;
+    transition: scale 0.5s;
+}
+
+.btn-primary:hover{
+    background-color: #ff9e4f;
+    scale: 0.9;
+}
+
+
+
