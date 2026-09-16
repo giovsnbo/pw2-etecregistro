@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semáforo com JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Semáforo com JavaScript</h1>
+
+    <div class="container">
+      <div class="luz" id="parar"></div>
+      <div class="luz" id="atencao"></div>
+      <div class="luz" id="siga"></div>
+      <br />
+
+      //Botões
+      <div class="botoes">
+        <button onclick="parar()" id="btnParar">Parar!</button>
+        <button onclick="atencao()" id="btnAtencao">Atenção!</button>
+        <button onclick="siga()" id="btnSiga">Siga!</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,11 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font: normal 18pt Arial;
+    font-family: Arial, sans-serif;
+    background-color: #0f2a16;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-input {
-    font: normal 18pt Arial;
+.container {
+    background-color: #1d022c;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
 }
 
-div#resultado {
-    margin-top: 20px;
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+    color: #dbe5e9;
+}
+
+.input-grid {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #29364e;
+    border: 2px solid #587a8a;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: center;
+    outline: none;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.botoes {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.botoes-operacoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+input[type="button"] {
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: #770dbd;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input[type="button"]:hover {
+    background-color: #770dbd;
+}
+
+#limpar {
+    background-color: #b31b5a;
+    width: 100%;
+}
+
+#limpar:hover {
+    background-color: #b31b5a;
+}
+
+#resultado {
+    font-size: 1.1rem;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e293b;
+    border-radius: 8px;
+    padding: 10px;
+    color: #e2e8f0;
+    border: 2px solid #334155;
+}
+
+#resultado strong {
+    color: #7f00e7;
+    margin-left: 4px;
 }

@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulação de Formulários</title>
+    <title>Calculadora com JavaScript</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-    <h1>Calculadora com JavaScript</h1>
-    <input type="number" name="n1" id="n1" min="0" max="99">
-    <input type="number" name="n2" id="n2" min="0" max="99">
-    <br><br> 
+    <div class="container">
+        <h1>Calculadora</h1>
+        
+        <div class="input-grid">
+            <input type="number" name="n1" id="n1" placeholder="n°1">
+            <input type="number" name="n2" id="n2" placeholder="n°2">
+        </div>
 
-    <input type="button" value="Somar" onclick="somar()"> 
+        <div class="botoes">
+            <div class="botoes-operacoes">
+                <input type="button" value="+" onclick="somar()"> 
+                <input type="button" value="-" onclick="subtrair()">
+                <input type="button" value="×" onclick="multiplicar()">
+                <input type="button" value="÷" onclick="dividir()">
+            </div>
+            <input type="button" value="limpar" id="limpar" onclick="limpar()">
+        </div>
 
-    <div id="resultado"></div>
+        <div id="resultado">
+            Resultado: <strong> </strong>
+        </div>
+    </div>
+
     <script src="script.js"></script>
-
 </body>
 </html>

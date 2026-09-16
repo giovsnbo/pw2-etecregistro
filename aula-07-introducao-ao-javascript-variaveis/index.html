@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução ao JavaScript</title>
+  </head>
+  <body>
+    <h1>Introdução ao JavaScript</h1>
+    <!-- <p>Eu sou ...</p> -->
+  </body>
+
+  <!-- JavaScript Interno -->
+  <script>
+    //Aqui vai o código JavaScript
+
+    //Declarando variável
+
+    //Var
+    // var nome = "Diego";
+    // document.write(nome);
+    // document.write("<br>");
+
+    //solicitando dados ao usuario
+    var nome = window.prompt("Digite seu nome");
+    document.write(nome);
+
+    //Let
+    let cidade = window.prompt("Digite sua cidade");
+    //cidade = "São Paulo";
+    document.write("<br>");
+    document.write("Eu moro em " + cidade + "<br>");
+
+    //const
+    const idade = Number(window.prompt("Digite sua idade"));
+    //conversao de dados: Number()
+    document.write("Tenho " + idade + " anos! <br>");
+
+    //verificando o tipo das variáveis
+    // document.write("O tipo da variável é " + typeof nome);
+    document.write("<br> O tipo da variável idade é " + typeof idade);
+    //o javascript atribui os tipos as variaveis de forma dinamica
+
+    //exibindo uma mensagem de alerta ao usuario
+    window.alert("Bem-vindo " + nome + "!");
+
+    //solicitando ao usuario 2 numeros
+    const n1 = Number(window.prompt("Digite um número:"));
+    const n2 = Number(window.prompt("Digite outro número:"));
+    const soma = n1 + n2;
+    document.write(`<br> O resultado da soma de ${n1} + ${n2} é ${soma}`);
+
+    //formatando strings
+    document.write(
+      `<br> Seu nome em letras maiúsculas é: ${nome.toUpperCase()}`);
+    document.write(
+      `<br> Seu nome em letras minúsculas é ${nome.toLowerCase()}`);
+
+    //formatacao de numeros
+    const salario = 2500
+    document.write(`<br> Salário com casas decimais: ${salario.toFixed(2)}`)
+    document.write(`<br> Salário com casa decimal em vírgula: ${salario.toFixed(2).replace('.',',')}`)
+
+    //formatacao de moeda
+
+    //real
+    document.write(`<br>Salário em real: ${salario.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`)
+    document.write(`<br>Salário em dolar: ${salario.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})}`)
+
+    /*Exercício - Aula 07
+    Crie uma página em JavaScript solicitando os seguintes dados:
+    1 - Nome 
+    2 - Ano de nascimento -> 2026 - anonasc
+    3 - Cidade
+    4 - Salário -> salario*0.19
+
+    Imprimir na página:
+    1 - Nome do Usuário
+    2 - Sua idade 
+    3 - Sua cidade em letras maiúsculas
+    4 - Seu salário formatado e convertido para dólar
+    */
+
+  </script>
+</html>
