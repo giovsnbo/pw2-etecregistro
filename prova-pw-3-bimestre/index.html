@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Painel de Diagnóstico do Servidor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Painel de Diagnóstico do Servidor</h1>
+
+      <div class="input-grid">
+        <h4>CPU (%):</h4>
+        <input type="number" name="cpu" id="cpu" />
+
+        <h4>Memória (%):</h4>
+        <input type="number" name="memoria" id="memoria" />
+
+        <h4>Temperatura (°C):</h4>
+        <input type="number" name="temperatura" id="temperatura" />
+      </div>
+
+      <div class="botoes">
+        <div class="botoes-metricas">
+          <br />
+          <input
+            type="button"
+            value="Verificar uso do PC"
+            onclick="verificarCpu()"
+          />
+          <input
+            type="button"
+            value="Verificar uso da memória"
+            onclick="verificarMemoria()"
+          />
+          <input
+            type="button"
+            value="Verificar temperatura"
+            onclick="verificarTemperatura()"
+          />
+          <input
+            type="button"
+            value="Reiniciar Servidor"
+            id="reiniciarServidor"
+            onclick="reiniciar()"
+          />
+        </div>
+      </div>
+
+      <div class="resultados">
+        <div id="resultadoCpu">Resultado: <strong> </strong></div>
+        <div id="resultadoMemoria">Resultado: <strong> </strong></div>
+        <div id="resultadoTemperatura">Resultado: <strong> </strong></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

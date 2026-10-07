@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #0f2a16;
+    background-color: #0f202a;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,37 +14,42 @@ body {
 }
 
 .container {
-    background-color: #1d022c;
-    padding: 30px;
+    background-color: #fffcf4;
+    padding: 40px;
     border-radius: 16px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
     width: 100%;
-    max-width: 420px;
+    max-width: 800px;
     text-align: center;
 }
 
 h1 {
     font-size: 1.5rem;
     margin-bottom: 24px;
-    color: #dbe5e9;
+    color: rgb(24, 43, 73);
 }
 
 .input-grid {
-    display: flex;
+    display: grid;
     gap: 12px;
     margin-bottom: 20px;
 }
 
+h4 {
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
 input[type="number"] {
-    width: 100%;
+    width: 300px;
     padding: 12px;
     font-size: 1.1rem;
-    background-color: #29364e;
+    background-color: rgb(255, 255, 246);
     border: 2px solid #587a8a;
     border-radius: 8px;
     color: #ffffff;
-    text-align: center;
     outline: none;
+    text-align: left;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -55,55 +60,83 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .botoes {
     display: grid;
-    gap: 10px;
-    margin-bottom: 20px;
 }
 
 .botoes-metricas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 5px;
 }
 
 input[type="button"] {
     padding: 12px;
     font-size: 1.1rem;
     font-weight: 600;
-    background-color: #770dbd;
-    color: #ffffff;
+    background-color: #0d77bd;
+    color: rgb(219, 219, 219);
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s;
+    width: 300px;
+    margin: 10px;
 }
 
 input[type="button"]:hover {
-    background-color: #770dbd;
+    background-color: #065c96;
 }
 
-#reiniciarServidor {
+#limpar {
     background-color: #b31b5a;
     width: 100%;
 }
 
-#reiniciarServidor:hover {
+#limpar:hover {
     background-color: #b31b5a;
 }
 
-#resultado {
+
+#resultadoCpu {
     font-size: 1.1rem;
     min-height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1e293b;
+    background-color: #00307e;
     border-radius: 8px;
     padding: 10px;
+    margin: 10px;
     color: #e2e8f0;
-    border: 2px solid #334155;
+    border: 2px solid #072146;
+}
+
+#resultadoTemperatura {
+    font-size: 1.1rem;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00307e;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    color: #e2e8f0;
+    border: 2px solid #072146;
+}
+
+#resultadoMemoria {
+    font-size: 1.1rem;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00307e;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    color: #e2e8f0;
+    border: 2px solid #072146;
 }
 
 #resultado strong {
-    color: #7f00e7;
+    color: #00152e;
     margin-left: 4px;
 }
